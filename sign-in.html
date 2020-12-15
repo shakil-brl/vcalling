@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"><!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"><!-- Material Design Bootstrap -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet"><!-- Your custom styles (optional) -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css'>
@@ -53,7 +55,7 @@
 
         <div class="row">
             <!-- Default form login -->
-            <form class="border border-light p-5 margin col-md-4" style="margin-top: 10%;" action="#!">
+            <form class="border border-light p-5 margin col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3" style="margin-top: 5%;" action="#!">
                 <p class="h4 mb-4 text-center">Sgin In</p>
 
                 <label for="email" class="text-left">Email Addrdess:</label>
@@ -72,11 +74,23 @@
                 <div class="text-center col-sm-12">
                     <div class="row">
                         <button class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-lg" style="width: 100%; margin-top: 20px 20px !important"><span class="mdc-button__label">Join/Create a Meeting</span></button> <!-- Button -->
+
+                    </div>
+                    <div class="custom-control custom-checkbox mb-5">
+                        <label>Already have an account? <a href="#" class="c-text">Sign in</a></label>
                     </div>
 
+                    <div class="saparator-with-text">
+                        <span>or</span>
+                    </div>
+
+                    <div class="row">
+                        <label class="text-left w-100 color">Sign In With</label>
+                        <a href="#" class=" btn-50 google-login"><i class="fa fa-google"></i>&nbsp;Google</a>
+                        <a href="#" class=" btn-50 facebook-login"><i class="fa fa-facebook"></i>&nbsp;Facebook</a>
+                    </div>
+                    <p class="margin-20p">By signing in, I agree to tha <a href="#" class="c-text">Privacy Policy</a> and <a href="#" class="c-text">Terms of Service</a></p>
                 </div>
-
-
             </form>
             <!-- Default form login -->
         </div>

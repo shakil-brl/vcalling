@@ -67,6 +67,40 @@ body {
     padding: 0;
     margin: 0
 }
+/* login screen -*/
+.btn-50 {
+    width: 49%;
+    padding: 6px;
+    box-shadow: 1px 1px 3px #fdf1f4;
+    border-radius: 3px;
+    color: #fff;
+}
+.btn-50:hover {
+    box-shadow: 1px 2px 3px #a7a2a2;
+    color: #fff;
+}
+.facebook-login {
+    margin-left: 1%;
+    background-color: #3B5998;
+}
+.google-login{
+   background-color: #DD4B39;
+}
+
+.saparator-with-text {
+    border-top: 1px solid #EAEAEA;
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.saparator-with-text span {
+    position: absolute;
+    top: -13px;
+    background-color: #fff;
+    padding: 0px 5px;
+}
+/* -- end login screen css --*/
+
 
 .button {
     background-color: #6772e5;
@@ -509,7 +543,8 @@ textarea.md-textarea:focus:not([readonly]) {
 }
 
 label {
-    color: #9fa0a0 !IMPORTANT;
+    color: #999999 !IMPORTANT;
+    font-family: 'Lato', sans-serif;
 }
 
 :root {
@@ -715,7 +750,9 @@ a.right.carousel-control {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
-
+.margin-20p{
+    margin-top: 20%;
+}
 .margin {
     margin: auto;
 }
