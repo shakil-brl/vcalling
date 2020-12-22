@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sgin In</title><!-- Material Design for Bootstrap fonts and icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"><!-- Font Awesome -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Bootstrap core CSS -->
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet"><!-- Your custom styles (optional) -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css'>
-    <link href="css/toastr.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>White Board</title><!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"><!-- Font Awesome -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"><!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet"><!-- Your custom styles (optional) -->
+  <link href="css/toastr.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container-full bg-white" style="height: 100vh; overflow: hidden">
         <!--====================================================================================================
@@ -49,7 +41,7 @@
                             <a class="nav-link c-text " href="#">Host a Meeting</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" href="sign-up.html" class="mdc-button mdc-button--raised shado-baground-textC radius10-font" style="width: 100%;padding: 1px 32px;">Sign Up</a>
+                            <button class="mdc-button mdc-button--raised shado-baground-textC radius10-font" style="width: 100%;padding: 1px 32px;">Sign In</button>
 
                         </li>
                     </ul>
@@ -60,41 +52,39 @@
 
         <div class="row">
             <!-- Default form login -->
-            <form class="border border-light p-5 margin col-8 col-sm-6 col-md-6  col-lg-4" style="margin-top: 5%;max-width: 400px;" action="#!">
-                <p class="h4 mb-4 text-center">Sgin In</p>
-                
-                
-                <div class="form-group">
- <label for="email" class="text-left">Email Addrdess:</label>
-<input type="text" id="email" name="email" maxlength="50" class="form-control" required />
-                   
-  </div>
-                
-                
-<div class="form-group position-relative">
-    <label for="inputAddress">Password:</label>
-    <input type="text" class="form-control" id="inputAddress">
-     <!-- Forgot password -->
-    <a href="" class="forgerpass c-text" style="position: absolute; top: 40px;  right: 13px; c-text"><small>forgot password?</small></a>
-  </div>
-                
-            <!-- Sign in button -->
-    
-            <div class="text-center col-sm-12">
+            <form class="border border-light p-5 margin col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3" style="margin-top: 5%;" action="#!">
+                <p class="h4 mb-4 text-center">Sgin Up</p>
+
+                <label for="email" class="text-left">Email Addrdess:</label>
+                <input type="email" id="email" name="email" maxlength="50" class="form-control mb-6 border4-light " required />
+                <label for="meetigid">Password:</label>
+                <div class="password" style="position: relative">
+                    <input type="text" id="meetingid" name="meetingid" maxlength="50" class="form-control mb-6 border4-light" required />
+                    <!-- Forgot password -->
+                    <a href="" class="forgerpass c-text" style="position: absolute; top: 6px;  right: 13px; c-text">Forgot?</a>
+                </div>
+
+                <!-- Sign in button -->
+                <div class="text-center col-sm-12">
                     <div class="row">
-                        <button class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-lg" style="width: 100%; margin-top: 20px 20px !important"><span class="mdc-button__label">Sign in</span></button> <!-- Button -->
+                        <button class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-lg" style="width: 100%; margin-top: 20px 20px !important"><span class="mdc-button__label">Join/Create a Meeting</span></button> <!-- Button -->
 
                     </div>
-                
-                    <div class="row mt-5">
+                    <div class="custom-control custom-checkbox mb-5">
+                        <label>Already have an account? <a href="sign-in.html" class="c-text">Sign in</a></label>
+                    </div>
+
+                    <div class="saparator-with-text">
+                        <span>or</span>
+                    </div>
+
+                    <div class="row">
                         <label class="text-left w-100 color">Sign In With</label>
                         <a href="#" class=" btn-50 google-login"><i class="fa fa-google"></i>&nbsp;Google</a>
                         <a href="#" class=" btn-50 facebook-login"><i class="fa fa-facebook"></i>&nbsp;Facebook</a>
                     </div>
+                    <p class="margin-20p">By signing in, I agree to tha <a href="#" class="c-text">Privacy Policy</a> and <a href="#" class="c-text">Terms of Service</a></p>
                 </div>
-                
-                
-                
             </form>
             <!-- Default form login -->
         </div>

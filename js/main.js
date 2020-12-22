@@ -1,3 +1,23 @@
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
+
 function gridview() {
     $('#sliderview').hide().fadeOut('1000');
     $('#drawingboardview').hide().fadeOut('1000');
@@ -18,13 +38,43 @@ function myFunction() {
 }
 
 
+$(".reveal").on('click',function() {
+    var $pwd = $(".pwd");
+    if ($pwd.attr('type') === 'password') {
+        $pwd.attr('type', 'text');
+    } else {
+        $pwd.attr('type', 'password');
+    }
+});
+
+
+function sidemanushow() {
+      $("#sidebar").toggleClass("d-none","d-block"); 
+}
+
+
+
+ function show(id) { 
+        if(document.getElementById(id).style.display=='none') { 
+            document.getElementById(id).style.display='block'; 
+        } 
+        return false;
+    } 
+    function hide(id) { 
+        if(document.getElementById(id).style.display=='block') { 
+            document.getElementById(id).style.display='none'; 
+        } 
+        return false;
+    }
+
 
 $(document).ready(function () {
     $("#fullscreen").click(function () {
         $("#clearfullview").toggleClass("clearfullview");
-         $(this).find('i').toggleClass('fa-square-o fa-clone');
+        $(this).find('i').toggleClass('fa-square-o fa-clone');
     });
-
+        
+    
 });
 
 function showPage() {

@@ -1,6 +1,7 @@
 body {
     background-color: #edf0f5;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .participant {
@@ -100,8 +101,198 @@ body {
     padding: 0px 5px;
 }
 /* -- end login screen css --*/
+.position-absolute {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+/*================== profile Css =========================*/
+.sidebar {
+    height: 100vh;
+    padding: 2% 1% 0 1.7%;
+}
+.profile-info ul {
+    margin: 0px;
+    padding: 0px;
+    line-height: 34px;
+}
+.sidebar {
+    height: 100vh;
+}
+.profile-info ul {
+    list-style: none;
+}
+button.btn.btn-sm.btn-outline-primary.act
+,button.btn.btn-sm.btn-outline-primary:hover, 
+a.nav-link.active,.sidebar-sticky ul li:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff736b), to(#ff2260)) !IMPORTANT;
+    background-image: -webkit-linear-gradient(left, #ff736b, #ff2260) !IMPORTANT;
+    background-image: linear-gradient(90deg, #ff736b, #ff2260) !IMPORTANT;
+    color: #fff !IMPORTANT;
+}
+.sidebar-sticky ul li a:hover {
 
+    color: inherit;
+}
 
+.profilrfrom {
+    border: 1px dashed #9999994f;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+
+.meeting-schdule .btn-outline-primary {
+    border-color: #ff2b61 !IMPORTANT;
+    box-shadow: none;
+    padding: 4px 8px !important;
+    margin: 9px 0 5px;
+    border: 0.5px solid #ff2b61 !important;
+    border-radius: 3px;
+    color: #999 !important;
+    font-size: 70%;
+    text-transform: none;
+}
+.meeting-schdule h4 {
+    margin: 0;
+    font-size: 133%;
+    color: #2B4961;
+    font-weight: 400;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid #ff2761 !important;
+    background-image: unset !IMPORTANT;
+    color: #ff2e62 !important;
+    border-color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: #2B4961;
+    font-weight: bold;
+    padding: 5px 9px;
+}
+.gray-button{
+        border: 1px solid gray !important;
+    color: #666666 !important;
+    box-shadow: unset;
+}
+
+.gray-button:hover{
+        border: 1px solid gray !important;
+    color: #666666 !important;
+}
+/*-----------------------------*/
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+
+#sidebarCollapse span:first-of-type {
+    /* rotate first one */
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    /* second one is not visible */
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    /* rotate third one */
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+#sidebarCollapse.active span {
+    /* no rotation */
+    transform: none;
+    /* all bars are visible */
+    opacity: 1;
+    margin: 5px auto;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    perspective: 1500px; 
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #F9F7FB;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: center left; /* Set the transformed position of sidebar to center left side. */
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg); /* Rotate sidebar vertically by 100 degrees. */
+}
+
+@media (max-width: 768px) {
+    /* Reversing the behavior of the sidebar: 
+       it'll be rotated vertically and off canvas by default, 
+       collapsing in on toggle button click with removal of 
+       the vertical rotation.   */
+  /* #sidebar {
+         margin-left: -250px;
+        transform: rotateY(100deg);
+        transform: rotateY(100deg);
+    }
+    
+    
+    
+    .mobile-absolute{
+    position: absolute;
+    z-index: 99;
+    min-width: 102%;
+}
+    */
+    
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+
+    /* Reversing the behavior of the bars: 
+       Removing the rotation from the first,
+       last bars and reappear the second bar on default state, 
+       and giving them a vertical margin */
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+
+    /* Removing the vertical margin and make the first and last bars rotate again when the sidebar is open, hiding the second bar */
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+}
+
+/*------------------------------*/
 .button {
     background-color: #6772e5;
     color: #fff;
@@ -125,6 +316,16 @@ body {
     text-transform: capitalize;
     color: #fff !important;
     border-color: transparent !important
+}
+
+.shado-baground-textS {
+    background-image: -webkit-gradient(linear, left top, right top, from(#80e86d), to(#03b8cb));
+    background-image: -webkit-linear-gradient(left, #80e86d, #03b8cb);
+    background-image: linear-gradient(90deg, #80e86d, #03b8cb);
+    text-transform: capitalize;
+    color: #fff !important;
+    border-color: transparent !important;
+    margin: 0;
 }
 
 .shado-baground-nocolor {
@@ -501,48 +702,32 @@ a.dropdown-toggle.small-icon-buttom:after {
     box-shadow: none
 }
 
-
+.nav-link {
+    text-transform: unset;
+}
+.sidebar-sticky ul li a {
+    color: #2B4961;
+}
+.bg-common{
+    background-color: #F9F7FB;
+}
 /*====================
 */
-input[type=date],
-input[type=datetime-local],
-input[type=email],
-input[type=number],
-input[type=password],
-input[type=search-md],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url] {
-    height: 23px;
-    padding: 6px;
-    width: 95%;
-}
 
 .custom-file-control:invalid,
 .form-control:invalid {
     background-image: none;
 }
 
-input[type=date]:focus:not([readonly]),
-input[type=datetime-local]:focus:not([readonly]),
-input[type=email]:focus:not([readonly]),
-input[type=number]:focus:not([readonly]),
-input[type=password]:focus:not([readonly]),
-input[type=search-md]:focus:not([readonly]),
-input[type=search]:focus:not([readonly]),
-input[type=tel]:focus:not([readonly]),
-input[type=text]:focus:not([readonly]),
-input[type=time]:focus:not([readonly]),
-input[type=url]:focus:not([readonly]),
-textarea.md-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #ff3162;
-    -webkit-box-shadow: 0 1px 0 0 #ff2460;
-    box-shadow: 0 1px 0 0 #ff2d62;
+.form-control:focus {
+    border-color: #ff4a66;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 36 96 / 8%);
 }
 
-label {
+
+
+label,.label {
     color: #999999 !IMPORTANT;
     font-family: 'Lato', sans-serif;
 }
@@ -585,6 +770,12 @@ button.btn.btn-danger.bmd-btn-fab.bmd-btn-fab-sm {
 }
 /*============================*/
 
+.navbar .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 84%;
+    line-height: 21px;
+    color: #ff2661 !important;
+}
 button.btn.btn-unique.btn-sm {
     padding: 8px
 }
@@ -613,6 +804,70 @@ nav.navbar.navbar-expand-lg.navbar-dark.scrolling-navbar {
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite
 }
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+   background-image: -webkit-gradient(linear, left top, right top, from(#80e86d), to(#03b8cb));
+    background-image: -webkit-linear-gradient(left, #80e86d, #03b8cb);
+    background-image: linear-gradient(90deg, #80e86d, #03b8cb);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 
 @-webkit-keyframes spin {
     0% {
@@ -790,9 +1045,16 @@ z-index: 99;
     #galleryview .participant {
         max-height: 95px
     }
+   
 }
 
 @media (min-width:280px) and (max-width:767.98px) {
+    
+    .mobile-absolute {
+    position: absolute !IMPORTANT;
+    z-index: 999;
+}
+    
     .top-right-button{
     right: 5%;
     z-index: 99;
