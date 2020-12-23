@@ -1017,6 +1017,11 @@ a.right.carousel-control {
     margin: 10px 0px;
 }
 
+.bmd-btn-fab.btn-danger.active.custom-file-control:before, .bmd-btn-fab.btn-danger.custom-file-control:active:before, .bmd-btn-fab.btn-danger.custom-file-control:focus:before, .bmd-btn-fab.btn-danger.custom-file-control:hover:before, .bmd-btn-fab.btn-danger.focus.custom-file-control:before, .btn-group-raised .btn-danger.active.custom-file-control:before, .btn-group-raised .btn-danger.custom-file-control:active:before, .btn-group-raised .btn-danger.custom-file-control:focus:before, .btn-group-raised .btn-danger.custom-file-control:hover:before, .btn-group-raised .btn-danger.focus.custom-file-control:before, .btn-group-raised .btn.btn-danger.active, .btn-group-raised .btn.btn-danger.focus, .btn-group-raised .btn.btn-danger:active, .btn-group-raised .btn.btn-danger:focus, .btn-group-raised .btn.btn-danger:hover, .btn-raised.btn-danger.active.custom-file-control:before, .btn-raised.btn-danger.custom-file-control:active:before, .btn-raised.btn-danger.custom-file-control:focus:before, .btn-raised.btn-danger.custom-file-control:hover:before, .btn-raised.btn-danger.focus.custom-file-control:before, .btn.bmd-btn-fab.btn-danger.active, .btn.bmd-btn-fab.btn-danger.focus, .btn.bmd-btn-fab.btn-danger:active, .btn.bmd-btn-fab.btn-danger:focus, .btn.bmd-btn-fab.btn-danger:hover, .btn.btn-raised.btn-danger.active, .btn.btn-raised.btn-danger.focus, .btn.btn-raised.btn-danger:active, .btn.btn-raised.btn-danger:focus, .btn.btn-raised.btn-danger:hover, .open>.bmd-btn-fab.btn-danger.dropdown-toggle.custom-file-control:before, .open>.btn-group-raised .btn-danger.dropdown-toggle.custom-file-control:before, .open>.btn-group-raised .btn.btn-danger.dropdown-toggle, .open>.btn-raised.btn-danger.dropdown-toggle.custom-file-control:before, .open>.btn.bmd-btn-fab.btn-danger.dropdown-toggle, .open>.btn.btn-raised.btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #f55549 !important;
+    border-color: #e11b0c;
+}
 
 @media (min-width:768px) and (max-width:991.98px) {
     
