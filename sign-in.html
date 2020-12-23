@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sgin In</title><!-- Material Design for Bootstrap fonts and icons -->
+    <title>Sgin in</title><!-- Material Design for Bootstrap fonts and icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"><!-- Font Awesome -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Bootstrap core CSS -->
@@ -24,7 +24,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-full bg-white" style="height: 100vh; overflow: hidden">
+    <div class="container-full bg-white">
         <!--====================================================================================================
             Section 1 Grod view 
             ========================================================================================================-->
@@ -60,34 +60,37 @@
 
         <div class="row">
             <!-- Default form login -->
-            <form class="border border-light p-5 margin col-8 col-sm-6 col-md-6  col-lg-4" style="margin-top: 5%;max-width: 400px;" action="#!">
+            <form class="border border-light p-5 margin col-8 col-sm-6 col-md-6  col-lg-4 mb-5" style="margin-top: 5%;max-width: 400px;" action="#!">
                 <p class="h4 mb-4 text-center">Sgin In</p>
                 
                 
                 <div class="form-group">
- <label for="email" class="text-left">Email Addrdess:</label>
+ <label for="email" class="text-left">Email Addrdess</label>
 <input type="text" id="email" name="email" maxlength="50" class="form-control" required />
                    
   </div>
                 
                 
 <div class="form-group position-relative">
-    <label for="inputAddress">Password:</label>
-    <input type="text" class="form-control" id="inputAddress">
+    <label for="inputAddress">Password</label>
+    <div class="position-relative">
+ <input id="password-field" type="password" class="form-control" name="password" value="secret">
+  <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password position-absolute mt-2"></span>
+    </div>
      <!-- Forgot password -->
-    <a href="" class="forgerpass c-text" style="position: absolute; top: 40px;  right: 13px; c-text"><small>forgot password?</small></a>
+    <a href="" class="forgerpass c-text" >Forgot password?</a>
   </div>
                 
             <!-- Sign in button -->
     
             <div class="text-center col-sm-12">
                     <div class="row">
-                        <button class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-lg" style="width: 100%; margin-top: 20px 20px !important"><span class="mdc-button__label">Sign in</span></button> <!-- Button -->
+                        <button class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-lg" style="width: 100%; margin-top: 20px 20px !important"><span class="mdc-button__label"><i class="fa fa-user"></i> &nbsp;Sign in</span></button> <!-- Button -->
 
                     </div>
                 
                     <div class="row mt-5">
-                        <label class="text-left w-100 color">Sign In With</label>
+                        <label class="text-left w-100 color">Sign in with</label>
                         <a href="#" class=" btn-50 google-login"><i class="fa fa-google"></i>&nbsp;Google</a>
                         <a href="#" class=" btn-50 facebook-login"><i class="fa fa-facebook"></i>&nbsp;Facebook</a>
                     </div>

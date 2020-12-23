@@ -1134,3 +1134,26 @@ z-index: 99;
         padding: 12px 0
     }
 }
+
+
+
+
+
+form .strength {
+  height: 0px;
+  width: 100%;
+  background: #ccc;
+  margin-top: -7px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+form .strength span {
+  width: 0px;
+  height: 7px;
+  display: block;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
