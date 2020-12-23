@@ -85,7 +85,7 @@ body {
     background-color: #3B5998;
 }
 .google-login{
-   background-color: #DD4B39;
+    background-color: #DD4B39;
 }
 
 .saparator-with-text {
@@ -123,7 +123,7 @@ body {
     list-style: none;
 }
 button.btn.btn-sm.btn-outline-primary.act
-,button.btn.btn-sm.btn-outline-primary:hover, 
+,button.btn.btn-sm.btn-outline-primary:hover,
 a.nav-link.active,.sidebar-sticky ul li:hover {
     background-image: -webkit-gradient(linear, left top, right top, from(#ff736b), to(#ff2260)) !IMPORTANT;
     background-image: -webkit-linear-gradient(left, #ff736b, #ff2260) !IMPORTANT;
@@ -175,13 +175,13 @@ a.nav-link.active,.sidebar-sticky ul li:hover {
     padding: 5px 9px;
 }
 .gray-button{
-        border: 1px solid gray !important;
+    border: 1px solid gray !important;
     color: #666666 !important;
     box-shadow: unset;
 }
 
 .gray-button:hover{
-        border: 1px solid gray !important;
+    border: 1px solid gray !important;
     color: #666666 !important;
 }
 /*-----------------------------*/
@@ -223,7 +223,7 @@ a.nav-link.active,.sidebar-sticky ul li:hover {
 .wrapper {
     display: flex;
     align-items: stretch;
-    perspective: 1500px; 
+    perspective: 1500px;
 }
 
 #sidebar {
@@ -241,33 +241,33 @@ a.nav-link.active,.sidebar-sticky ul li:hover {
 }
 
 @media (max-width: 768px) {
-    /* Reversing the behavior of the sidebar: 
-       it'll be rotated vertically and off canvas by default, 
-       collapsing in on toggle button click with removal of 
+    /* Reversing the behavior of the sidebar:
+       it'll be rotated vertically and off canvas by default,
+       collapsing in on toggle button click with removal of
        the vertical rotation.   */
-  /* #sidebar {
-         margin-left: -250px;
-        transform: rotateY(100deg);
-        transform: rotateY(100deg);
-    }
-    
-    
-    
-    .mobile-absolute{
-    position: absolute;
-    z-index: 99;
-    min-width: 102%;
-}
-    */
-    
+    /* #sidebar {
+           margin-left: -250px;
+          transform: rotateY(100deg);
+          transform: rotateY(100deg);
+      }
+
+
+
+      .mobile-absolute{
+      position: absolute;
+      z-index: 99;
+      min-width: 102%;
+  }
+      */
+
     #sidebar.active {
         margin-left: 0;
         transform: none;
     }
 
-    /* Reversing the behavior of the bars: 
+    /* Reversing the behavior of the bars:
        Removing the rotation from the first,
-       last bars and reappear the second bar on default state, 
+       last bars and reappear the second bar on default state,
        and giving them a vertical margin */
     #sidebarCollapse span:first-of-type,
     #sidebarCollapse span:nth-of-type(2),
@@ -451,7 +451,7 @@ button.mdc-button.shado-baground-nocolor.radius10-font {
 }
 
 div#searchUserlist {
-    //border: 1px solid #edf0f7;
+//border: 1px solid #edf0f7;
     height: 100%;
 }
 
@@ -478,7 +478,25 @@ singal-profile-sidebar img {
 
 #chatMessage textarea {
     border-bottom: 1px solid #c7c6c6 !important;
-    min-height: 70px
+    min-height: 70px;
+    width: 100%;
+}
+
+.btn-rounded.end-call-round {
+    border-radius: 50px;
+    font-size: 105%;
+    padding: 8px 18px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.group-btn-bottom button {
+    font-size: 17px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 12px;
 }
 
 textarea:focus {
@@ -748,12 +766,12 @@ label,.label {
     color: var(--info-color);
 }
 .top-right-button{
-    position: absolute; 
-    right: 3%; 
+    position: absolute;
+    right: 3%;
     top: 25px;
-     z-index: 999;
+    z-index: 999;
 
-} 
+}
 .c-gray a img {
     width: 15px;
     height: 15px;
@@ -807,65 +825,65 @@ nav.navbar.navbar-expand-lg.navbar-dark.scrolling-navbar {
 
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 input:checked + .slider {
-   background-image: -webkit-gradient(linear, left top, right top, from(#80e86d), to(#03b8cb));
+    background-image: -webkit-gradient(linear, left top, right top, from(#80e86d), to(#03b8cb));
     background-image: -webkit-linear-gradient(left, #80e86d, #03b8cb);
     background-image: linear-gradient(90deg, #80e86d, #03b8cb);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #2196F3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 
@@ -929,7 +947,6 @@ input:checked + .slider:before {
 
 #myDiv {
     display: none;
-    text-align: center
 }
 
 .carousel-control {
@@ -1024,12 +1041,12 @@ a.right.carousel-control {
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
-    
-.top-right-button{
-right: 5%;
-top: 44px;
-z-index: 99;
-}
+
+    .top-right-button{
+        right: 5%;
+        top: 44px;
+        z-index: 99;
+    }
     .singal-profile {
         height: auto
     }
@@ -1050,20 +1067,20 @@ z-index: 99;
     #galleryview .participant {
         max-height: 95px
     }
-   
+
 }
 
 @media (min-width:280px) and (max-width:767.98px) {
-    
+
     .mobile-absolute {
-    position: absolute !IMPORTANT;
-    z-index: 999;
-}
-    
+        position: absolute !IMPORTANT;
+        z-index: 999;
+    }
+
     .top-right-button{
-    right: 5%;
-    z-index: 99;
-}
+        right: 5%;
+        z-index: 99;
+    }
     .show-mobail {
         display: block !important
     }
@@ -1098,7 +1115,7 @@ z-index: 99;
     }
 }
 @media only screen and (max-width:600px) {
-    
+
     .carousel-control {
         top: 25%
     }
@@ -1145,20 +1162,20 @@ z-index: 99;
 
 
 form .strength {
-  height: 0px;
-  width: 100%;
-  background: #ccc;
-  margin-top: -7px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  overflow: hidden;
-  -webkit-transition: height 0.3s;
-  transition: height 0.3s;
+    height: 0px;
+    width: 100%;
+    background: #ccc;
+    margin-top: -7px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
 }
 form .strength span {
-  width: 0px;
-  height: 7px;
-  display: block;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
+    width: 0px;
+    height: 7px;
+    display: block;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
 }
