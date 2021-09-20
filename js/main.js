@@ -190,17 +190,31 @@ function showPage() {
 }
 
 $(document).ready(function () {
-    $("#searchUserlist").hide();
-    $("#massageactive").on('click', function () {
-        $("#searchUserlist").hide();
-        $("#groupchat").show();
-    });
+  $('.side-flip').hide();
+    // $("#searchUserlist").hide();
+    // $("#massageactive").on('click', function () {
+    //     $("#searchUserlist").hide();
+    //     $("#groupchat").show();
+    // });
 
 
-    $("#useractiv").on('click', function () {
-        $("#groupchat").hide();
-        $("#searchUserlist").show();
+    // $("#useractiv").on('click', function () {
+    //     $("#groupchat").hide();
+    //     $("#searchUserlist").show();
+    // });
+
+    $(".side-flip-ctl").click(function()
+    {
+
+      if ( $('#device-width').hasClass('col-lg-12') ){
+        $("#device-width").removeClass('col-lg-12').addClass('col-sm-9');
+      }
+      
+
+             $('.side-flip').hide();
+             $('#'+$(this).attr('name')).fadeIn();   
     });
+
 
 
     $('#owl-one .participant').click(function () {

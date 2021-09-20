@@ -305,16 +305,20 @@ a.nav-link.active,.sidebar-sticky ul li:hover {
 }
 
 .grad-ation button {
-    background-color: rgb(10 9 7 / .30) !important
+    /*background-color: rgb(10 9 7 / .30) !important*/
+    background-color: #f455491a !important;
 }
+
+.btn.bmd-btn-fab.btn-danger {
+    color: #f45549;}
 
 .shado-baground-nocolor:hover,
 .shado-baground-textC {
-    background-image: -webkit-gradient(linear, left top, right top, from(#ff736b), to(#ff2260));
+    /*background-image: -webkit-gradient(linear, left top, right top, from(#ff736b), to(#ff2260));
     background-image: -webkit-linear-gradient(left, #ff736b, #ff2260);
-    background-image: linear-gradient(90deg, #ff736b, #ff2260);
-    text-transform: capitalize;
-    color: #fff !important;
+    background-image: linear-gradient(90deg, #ff736b, #ff2260);*/
+   text-transform: unset;
+    color: #f55549 !important;
     border-color: transparent !important
 }
 
@@ -340,19 +344,42 @@ a.nav-link.active,.sidebar-sticky ul li:hover {
 }
 
 .search-widget {
-    height: 100%;
+    height: auto;
     width: 100%;
     float: right;
     position: relative
 }
 
-.search-from-wiget {
+/* .search-from-wiget {
     background-image: -webkit-gradient(linear, left top, right top, from(#ff736b), to(#ff2260));
     background-image: -webkit-linear-gradient(left, #ff736b, #ff2260);
     background-image: linear-gradient(90deg, #ff736b, #ff2260);
     border-radius: 6px 5px 0 0
+} */
+
+
+
+.search-from-wiget {
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
+
+#searchUserlist {
+    height: 99%;
+    display: flex;
+}
+.search-from-wiget form{
+border-radius: 61px;
+    line-height: 35px;
+    border: 1px solid #f45549;
+    width: 96%;
+}
+.search-from-wiget form i{
+float: left;
+width: 7%;
+color: #ff3563
+}
 img.avatar {
     height: 24px
 }
@@ -376,12 +403,12 @@ img.avatar {
 }
 
 .user-list ul li a {
-    color: gray;
+    color: #f45549;
     font-weight: 100
 }
 
 .message-history.col-md-12 {
-    height: 79vh;
+    height: 70vh;
     display: inline-block;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -397,16 +424,44 @@ img.avatar {
 .list-bottom-action {
     position: absolute;
     bottom: 0;
-    background-color: #edf0f5;
-    padding-top: 15px;
-    padding-bottom: 15px
+}
+
+.btn-primary {
+    color: #219653 !important;
+    background-color: #2196531f !important;
+    border-color: #feeeec;
+    box-shadow: none;
+}
+
+.btn-danger{
+    background-color: #feeeec !important;
+}
+
+
+ul.list-unstyled.friend-list li {
+    border: 1px solid #feeeec;
+    margin-bottom: 5px;
+    border-radius: 28px;
 }
 
 button.mdc-button.shado-baground-nocolor.radius10-font {
     border: 1px solid gray;
     color: gray
 }
+.mdc-button--raised,
+.bmd-btn-fab.custom-file-control:before,
+.btn.bmd-btn-fab
+{
+    box-shadow:none;
+}
+.mdc-button--raised:hover{
+    box-shadow:0px 2px 4px -1px rgb(228 12 12 / 20%), 0px 4px 5px 0px rgb(239 14 14 / 14%), 0px 1px 10px 0px rgb(255 2 2 / 12%) !important;
+}
 
+.bmd-btn-fab.custom-file-control:focus:before, .bmd-btn-fab.custom-file-control:hover:before, .btn-group-raised .btn:focus, .btn-group-raised .btn:hover, .btn-group-raised .custom-file-control:focus:before, .btn-group-raised .custom-file-control:hover:before, .btn-raised.custom-file-control:focus:before, .btn-raised.custom-file-control:hover:before, .btn.bmd-btn-fab:focus, .btn.bmd-btn-fab:hover, .btn.btn-raised:focus, .btn.btn-raised:hover {
+    z-index: 1;
+    box-shadow: 0 4px 5px 0 rgb(245 0 0 / 14%), 0 1px 10px 0 rgb(255 0 0 / 12%), 0 2px 4px -1px rgb(255 0 0 / 20%) !important;
+}
 .border4 {
     border-top: 1px solid #c7c6c6
 }
@@ -448,11 +503,6 @@ button.mdc-button.shado-baground-nocolor.radius10-font {
 
 .singal-profile-sidebar img {
     width: 100%;
-}
-
-div#searchUserlist {
-//border: 1px solid #edf0f7;
-    height: 100%;
 }
 
 .singal-profile {
