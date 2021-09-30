@@ -5,25 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Grid View</title><!-- Material Design for Bootstrap fonts and icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <title>Dashbord View</title>
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <!--
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">  <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <!-- Material Design Bootstrap -->
+   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
-    <link href="css/toastr.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">    
+   -->
+    <!--this is requeirfor old css -->
+   <!-- <link href="css/toastr.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+   -->
 </head>
 
-<body onload="myFunction()">
-    <div id="loader"></div>
+<body>
+    <!--<div id="loader"></div>-->
     <!--loder-->
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div   class="animate-bottom">
         <!--Notofication -->
         <!-- <div id="toast-container" class="toast-bottom-right" aria-live="polite" role="alert">
       <div class="toast toast-warning">
@@ -39,128 +47,608 @@
             ========================================================================================================-->
 
             <div id="clearfullview" class="container-fuid card clearfullview">
-                <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary MuiPaper-elevation4" style="background-image: linear-gradient(90deg, rgb(255, 115, 107), rgb(255, 34, 96)); height: 25px;">
+                <header
+                    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary MuiPaper-elevation4"
+                    style="background-image: linear-gradient(90deg, rgb(255, 115, 107), rgb(255, 34, 96)); height: 25px;">
                     <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters text-right text-light">
                         <a href="#" id="fullscreen"><i class="fa fa-square-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </header>
-                <div class="btn-group btn-group-sm top-right-button c-gray">
-                    <a hrfe="#" onclick="spkaerview()" data-toggle="tooltip" data-placement="top" title="Spkaer View"><img src="img/speakerview.svg"></a>&nbsp;&nbsp;
-                    <a hrfe="#" onclick="gridview()" data-toggle="tooltip" data-placement="top" title="List View"><img src="img/grid_view.svg"></a>
-
-                </div>
-                <!--==============================
-                  left Grid Section
-                  ==================================-->
-                <div class="col-lg-11 col-md-11 col-lx-12 margin" style="margin: auto;padding: 8px 5% 0px 5%;">
-                    <div class="min-hidgrid">
-                        <div id="galleryview" class="d-flex flex-wrap justify-content-center p-relative wrap">
-
-                            <div class="participant">
-                                <!-- participant Grid iteam-->
-                                <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
-                                        <source src="text.mp4" type="video/mp4"> Your browser cannot play this video.
-                                    </video>
-                                    <div class="description">
-                                        <h4>Ninad Hossain <i class="material-icons">mic_off</i></h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="participant">
-                                <!-- participant Grid iteam-->
-                                <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
-                                        <source src="text1.mp4" type="video/mp4"> Your browser cannot play this video. <i class="material-icons">mic_off</i>
-                                    </video>
-                                    <div class="description">
-                                        <h4>Ninad Hossain</h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="participant">
-                                <!-- participant Grid iteam-->
-                                <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
-                                        <source src="text.mp4" type="video/mp4"> Your browser cannot play this video. <i class="material-icons">mic_off</i>
-                                    </video>
-                                    <div class="description">
-                                        <h4>Ninad Hossain</h4>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="participant">
-                                <!-- participant Grid iteam-->
-                                <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
-                                        <source src="text1.mp4" type="video/mp4"> Your browser cannot play this video.
-                                    </video>
-                                    <div class="description">
-                                        <h4>Ninad Hossain</h4>
-                                    </div>
-                                </a>
-                            </div><!-- Left and right controls -->
-                        </div>
-
-                    </div>
-                    <!--====================================
-                     Bottom Menu Section 
-                     ======================================-->
-                    <div data-brackets-id="4205" class="col-md-12 col-sm-12">
-                        <div data-brackets-id="4206" class="row">
-                            <nav data-brackets-id="4207" class="navbar navbar-expand-lg navbar-dark scrolling-navbar overright-nabbar nopadding">
-                                <button data-brackets-id="4208" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-9" aria-controls="navbarSupportedContent-9" aria-expanded="false" aria-label="Toggle navigation"><i data-brackets-id="4209" class="material-icons c-text">menu</i></button> <!-- Button -->
-                                <div data-brackets-id="4210" class="show-mobail">
-                                    <a data-brackets-id="4211" href="javascript:void" class="btn-floating"><i data-brackets-id="4212" class="material-icons">mic_none</i></a> <a data-brackets-id="4213" href="javascript:void" class="btn-floating"><i data-brackets-id="4214" class="material-icons">mic_off</i></a> <a data-brackets-id="4215" href="javascript:void" class="btn-floating"><i data-brackets-id="4216" class="material-icons">videocam</i></a> <a data-brackets-id="4217" href="javascript:void" class="btn-floating"><i data-brackets-id="4218" class="material-icons">person_add_alt_1</i></a> <a data-brackets-id="4219" href="javascript:void" class="btn-floating"><i data-brackets-id="4220" class="material-icons">people_alt</i></a> <a data-brackets-id="4221" href="javascript:void" class="btn-floating"><i data-brackets-id="4222" class="material-icons">screen_share</i></a> <a data-brackets-id="4223" href="speaker-view.html" class="btn-floating" data-toggle="modal" data-target="#modalDiscount"><span data-brackets-id="4224" class="material-icons">insert_comment</span></a> <a data-brackets-id="4225" href="javascript:void" class="btn-floating btn btn-danger btn-sm shado-baground-textC btn-rounded" style="padding: 6px; margin-top: -12px;">End call</a>
-                                </div>
-                                <div data-brackets-id="4226" class="collapse navbar-collapse" id="navbarSupportedContent-9">
-                                    <div data-brackets-id="4227" class="grad-ation w-100">
-                                        <div data-brackets-id="4228" class="row">
-                                            <div data-brackets-id="4229" class="col-md-2 text-left">
-                                                <!-- <button type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"><span class="material-icons">mic_none</span></button>-->
-                                                <button data-brackets-id="4230" type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Audio"><span data-brackets-id="4231" class="material-icons">mic_off</span></button> <!-- Button -->
-                                                <button data-brackets-id="4232" type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Video"><i data-brackets-id="4233" class="material-icons">videocam</i></button> <!-- Button -->
-                                            </div>
-                                            <div data-brackets-id="4234" class="col-md-8  text-center">
-                                                <button data-brackets-id="4235" type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="modal" data-target="#exampleModal" data-tooltip="tooltip" data-placement="top" title="Invite"><i data-brackets-id="4236" class="material-icons">person_add_alt_1</i></button> <!-- Button -->
-                                                <button data-brackets-id="4237" type="button" id="useractiv" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Manage Participant"><i data-brackets-id="4238" class="material-icons">people_alt</i></button> <!-- Button -->
-                                                <button data-brackets-id="4239" type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm active" data-toggle="tooltip" data-placement="top" title="" data-original-title="Polls"><i data-brackets-id="4240" class="material-icons">poll</i></button> <!-- Button -->
-                                                <button data-brackets-id="4241" type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Share Screen"><i data-brackets-id="4242" class="material-icons">screen_share</i></button> <!-- Button -->
-                                                <button data-brackets-id="4243" type="button" id="massageactive" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat"><i data-brackets-id="4244" class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                </button><!-- Button -->
-                                                <button data-brackets-id="4245" type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Record">
-                                                    <i data-brackets-id="4246" class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                                                </button><!-- Button -->
-                                                <!-- Button -->
-                                            </div>
-                                            <div data-brackets-id="4247" class="col-md-2  text-right ">
-                                                <button data-brackets-id="4248" class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-rounded"><span data-brackets-id="4249" class="mdc-button__label">End call</span></button> <!-- Button -->
+                <div class="col-lg-12 col-md-12 col-lx-12 margin" style="margin: auto;padding: 8px 1% 0px 1%;">
+                    <div id="drawingboardview">
+                        <div class="row ">
+                            <div id="device-width" class="col col-lg-12">
+                                <div class="row mt-2">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-sm-12 text-right">
+                                                <div class="btn-group btn-group-sm c-gray" role="group"
+                                                    aria-label="Basic example">
+                                                    <a hrfe="#" onclick="spkaerview()" data-toggle="tooltip"
+                                                        data-placement="top" title="Spkaer View"><img
+                                                            src="./src/img/speakerview.svg"></a>&nbsp;&nbsp;
+                                                    <a hrfe="#" onclick="gridview()" data-toggle="tooltip"
+                                                        data-placement="top" title="List View"><img
+                                                            src="./src/img/grid_view.svg"></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!--=== End Menu li ===-->
+                                <div class="col-sm-12 border" style="height: 80vh;">
+                                    <canvas height="500"></canvas>
+                                </div>
+                                <!--====Bottom Menu Section =====-->
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <nav
+                                            class="navbar navbar-expand-lg navbar-dark scrolling-navbar overright-nabbar nopadding">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarSupportedContent-9"
+                                                aria-controls="navbarSupportedContent-9" aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                                <i class="material-icons c-text">menu</i>
+                                            </button> <!-- Button -->
+                                            <div class="show-mobail">
+                                                <a href="javascript:void" class="btn-floating">
+                                                    <i class="material-icons">mic_none</i>
+                                                </a>
+                                                <a href="javascript:void" class="btn-floating">
+                                                    <i class="material-icons">mic_off</i>
+                                                </a>
+                                                <a href="javascript:void" class="btn-floating">
+                                                    <i class="material-icons">videocam</i>
+                                                </a>
+                                                <a href="javascript:void" class="btn-floating">
+                                                    <i class="material-icons">person_add_alt_1</i>
+                                                </a>
+                                                <a href="javascript:void" class="btn-floating">
+                                                    <i class="material-icons">people_alt</i>
+                                                </a>
+                                                <a href="javascript:void" class="btn-floating">
+                                                    <i class="material-icons">screen_share</i>
+                                                </a>
+                                                <a href="speaker-view.html" class="btn-floating" data-toggle="modal"
+                                                    data-target="#modalDiscount"><span
+                                                        class="material-icons">insert_comment</span>
+                                                </a>
+                                                <a href="javascript:void"
+                                                    class="btn-floating btn btn-danger btn-sm shado-baground-textC btn-rounded"
+                                                    style="padding: 6px; margin-top: -12px;">End call</a>
+                                            </div>
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent-9">
+                                                <div class="grad-ation w-100">
+                                                    <div class="row">
+                                                        <div class="col-md-2 text-left">
+                                                            <!-- <button type="button" class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"><span class="material-icons">mic_none</span></button>-->
+                                                            <button type="button"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Audio"><span
+                                                                    class="material-icons">mic_off</span></button>
+                                                            <!-- Button -->
+                                                            <button type="button"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Video"><i
+                                                                    class="material-icons">videocam</i></button>
+                                                            <!-- Button -->
+                                                        </div>
+                                                        <div class="col-md-8  text-center">
+                                                            <button type="button"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="modal" data-target="#exampleModal"
+                                                                data-tooltip="tooltip" data-placement="top"
+                                                                title="Invite"><i
+                                                                    class="material-icons">person_add_alt_1</i></button>
+                                                            <!-- Button -->
+                                                            <!-- <button type="button" id="useractiv"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Manage Participant">
+                                                                <i class="material-icons">people_alt</i>
+                                                            </button>-->
+                                                            <!-- Button -->
+                                                            <button type="button"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm active"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Polls">
+                                                                <i class="material-icons">poll</i></button>
+                                                            <!-- Button -->
+                                                            <button type="button"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Share Screen"><i
+                                                                    class="material-icons">screen_share</i></button>
+                                                            <!-- Button -->
+                                                            <!-- <button type="button" id="massageactive"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Chat">
+                                                                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            </button> -->
 
-                            </nav>
+                                                            <button type="button"
+                                                                class=" side-flip-ctl btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Chat" name="groupchat">
+                                                                <i class="material-icons">wechat</i>
+                                                            </button>
+
+
+                                                            <button type="button"
+                                                                class=" side-flip-ctl btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="User list" name="searchUserlist">
+                                                                <i class="material-icons">people_alt</i>
+                                                            </button>
+
+                                                            <button type="button"
+                                                                class=" side-flip-ctl btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Speaker View"
+                                                                name="speakeruserlist">
+                                                                <i class="material-icons">view_sidebar</i>
+                                                            </button>
+
+
+
+
+                                                            <!-- Button -->
+                                                            <button type="button"
+                                                                class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Record">
+                                                                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                            </button>
+                                                            <!-- Button -->
+                                                            <!-- Button -->
+                                                        </div>
+                                                        <div class="col-md-2  text-right ">
+                                                            <button
+                                                                class="mdc-button mdc-button--raised shado-baground-textC mt-2 btn-rounded"><span
+                                                                    class="mdc-button__label">End Call</span></button>
+                                                            <!-- Button -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--=== End Menu li ===-->
+
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!--=== Bottom menu End =====-->
+                            </div>
+                            <!--=====sidebar=====-->
+                            <div class="col col-lg-3 border-left rounded-left">
+
+                                <!-- User list -->
+                                <div id="searchUserlist" class="side-flip">
+                                                <div class="search-widget mon-border-4">
+                                                    <div class="search-from-wiget">
+                                                        <!-- Search form -->
+                                                        <form class="form-inline d-flex justify-content-center md-form form-sm m-0">
+                                                            <i class="fa fa-search " aria-hidden="true"></i>
+                                                            <input class="input-wigate-serach" type="text" style="width: 86%; float: right; border: 0px; color: #fff" placeholder="Find a Participant" aria-label="Search">
+                                                        </form>
+                                                    </div>
+                                                    <div class="user-list">
+                                                        <ul class="list-unstyled friend-list">
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <!---<img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">-->
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-microphone-slash"></i></div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void" class="d-flex justify-content-between"><span class="material-icons">person_pin</span>
+                                                                    <div class="w-75">
+                                                                        <strong>Danny Smith</strong>
+                                                                    </div>
+                                                                    <div class="chat-footer"><i class="fa fa-hand-paper-o"></i>&nbsp;<i class="fa fa-microphone-slash"></i>&nbsp;<i class="fa fa-commenting"></i>&nbsp;<i class="fa fa-hand-paper-o"></i></div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-bottom-action w-100 text-center">
+                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">                                               
+                                                <button type="button" class="btn btn-danger btn-sm">Mute All</button>
+                                                <button type="button" class="btn btn-primary btn-sm ">Unmute All</button>
+                                                </div>
+
+
+                                                      <!--  <button class=""><span class="mdc-button__label">Mute All</span></button> 
+                                                        
+                                                         <button class=""><span class="mdc-button__label">Unmute All</span></button> 
+                                                      -->  
+                                                        </div>
+                                                </div>
+                                    
+                                </div>
+                                <!--End User List-->
+                   
+                                <!--speaker User list-->
+                                <div id="speakeruserlist" class="side-flip search-widget">
+                                    <div class="singal-profile-sidebar w-100 border col-sm-12">
+                                        <div class="row">
+
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail">
+                                                <video style="outline-style: none; width: 100%;" loop="true"
+                                                    autoplay="autoplay">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video.
+                                                </video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain <i class="material-icons">mic_off</i></h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="thumvideo" class="d-flex flex-wrap justify-content-center p-relative wrap">
+
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video.</video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain <i class="material-icons">mic_off</i></h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="participant">
+                                            <!-- participant Grid iteam-->
+                                            <a href="javascript:void(0)" class="thumbnail"><video autoplay="">
+                                                    <source src="./src/view/text.mp4" type="video/mp4"> Your browser cannot play
+                                                    this video. <i class="material-icons">mic_off</i></video>
+                                                <div class="description">
+                                                    <h4>Ninad Hossain</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- End speaker User list-->
+
+                                <!--Chart Section-->
+                                <div id="groupchat" class="side-flip w-100 mon-border-4">
+                                    <div class="sider-barheader">
+                                        Group Chat
+                                    </div>
+                                    <!--======== Chat massage =============-->
+                                    <div class="message-history nopadding col-md-12 text-left p-1">
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p class="rightText text-right"><span>Name is: This is right bb</span></p>
+                                        <p class="rightText text-right"><span>Name is: This is right testnv</span></p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p class="rightText text-right"><span>Name is: This is right testnv</span></p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p class="rightText text-right"><span>Name is: ok</span></p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>ok</p>
+                                        <p class="rightText text-right"><span>Name is: This is right testnv</span></p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p class="rightText text-right"><span>Name is: ok</span></p>
+                                        <p><span>Name is:</span>This is my testnv</p>
+                                        <p><span>Name is:</span>ok</p>
+                                    </div>
+                                    <!--======== End Chat massage =============-->
+                                    <div class="siderbarfooter text-center col border-top">
+                                        <div class="row">
+                                            <form id="chatMessage" style="width: 100%" name="chatMessage">
+                                                <!--==== From start ====-->
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="input-group p-1">
+                                                            <label class="input-group-text c-text"
+                                                                for="inputGroupSelect01">To:</label> <select
+                                                                class="custom-select selectCustom pd5"
+                                                                id="inputGroupSelect01">
+                                                                <option selected>
+                                                                    Choose...
+                                                                </option>
+                                                                <option value="1">
+                                                                    One
+                                                                </option>
+                                                                <option value="2">
+                                                                    Two
+                                                                </option>
+                                                                <option value="3">
+                                                                    Three
+                                                                </option>
+                                                            </select> <!-- Dropdown user list -->
+                                                            <div class="btn-group dropup text-right">
+                                                                <a href="javascript:void"
+                                                                    class="dropdown-toggle small-icon-buttom"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false"></a>
+                                                                <div class="dropdown-menu">
+                                                                    <!-- Dropdown menu links -->
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void">Action</a> <a
+                                                                        class="dropdown-item"
+                                                                        href="javascript:void">Another action</a> <a
+                                                                        class="dropdown-item"
+                                                                        href="javascript:void">Something else here</a>
+                                                                    <div class="dropdown-divider"></div><a
+                                                                        class="dropdown-item"
+                                                                        href="javascript:void">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <textarea style="border: 0px;" placeholder="Type Message Here..."
+                                                        class="" id="messageTypehere"></textarea>
+                                                </div>
+                                            </form>
+                                            <!--==== End ====-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Chart Section-->
+
+
+
+
+                            </div>
+                            <!--=====sidebar=====-->
                         </div>
                     </div>
-                    <!--============ Bottom menu End =====-->
-                    <a class="left carousel-control shado-baground-textC" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                    <a class="right carousel-control shado-baground-textC" href="#myCarousel" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
                 </div>
-                <!--================================
-                  Sidebar
-                  ================================-->
-
             </div>
-            <!--/.Main layout-->
-            <!--====================================================================================================
-            Section 2 
-            ========================================================================================================-->
+
+            <!--******** End Section 3 ************-->
+
 
         </main><!-- Common Modal for all action just containt will changewith -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header" style="background-image: linear-gradient(90deg, rgb(255, 34, 96), rgb(255, 115, 107)); color: #fff; padding-bottom: 20px">
+                    <div class="modal-header"
+                        style="background-image: linear-gradient(90deg, rgb(255, 34, 96), rgb(255, 115, 107)); color: #fff; padding-bottom: 20px">
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5><!-- Button -->
                     </div>
                     <div id="daynamicbody" class="modal-body">
@@ -168,20 +656,25 @@
                     </div>
                     <div class="modal-footer">
                         <hr>
-                        <button type="button" class="mdc-button mdc-button--raised shado-baground-textC mt-2" data-dismiss="modal">Close</button> <!-- Button -->
-                        <button type="button" class="mdc-button mdc-button--raised shado-baground-textC mt-2">Save changes</button><!-- Button -->
+                        <button type="button" class="mdc-button mdc-button--raised shado-baground-textC mt-2"
+                            data-dismiss="modal">Close</button> <!-- Button -->
+                        <button type="button" class="mdc-button mdc-button--raised shado-baground-textC mt-2">Save
+                            changes</button><!-- Button -->
                     </div>
                 </div>
             </div>
         </div>
         <!--Modal: modalDiscount-->
-        <div class="modal fade right" id="modalDiscount" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true">
+        <div class="modal fade right" id="modalDiscount" tabindex="-1" role="dialog" aria-hidden="true"
+            data-backdrop="true">
             <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document">
                 <!--Content-->
                 <div class="modal-content">
                     <!--Header-->
                     <div class="modal-header">
-                        <p class="heading">Discount offer: <strong>10% off</strong></p><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="white-text">×</span></button> <!-- Button -->
+                        <p class="heading">Discount offer: <strong>10% off</strong></p><button type="button"
+                            class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                                class="white-text">×</span></button> <!-- Button -->
                     </div>
                     <!--Body-->
                     <div class="modal-body">
@@ -190,15 +683,18 @@
                                 <p class="text-center"></p>
                             </div>
                             <div class="col-9">
-                                <p>Sharing is caring. Therefore, from time to time we like to give our visitors small gifts. Today is one of those days.</p>
-                                <p><strong>Copy the following code and use it at the checkout. It's valid for <u>one day</u>.</strong></p>
+                                <p>Sharing is caring. Therefore, from time to time we like to give our visitors small
+                                    gifts. Today is one of those days.</p>
+                                <p><strong>Copy the following code and use it at the checkout. It's valid for <u>one
+                                            day</u>.</strong></p>
                                 <h2><span class="badge">v52gs1</span></h2>
                             </div>
                         </div>
                     </div>
                     <!--Footer-->
                     <div class="modal-footer flex-center">
-                        <a href="javascript:void" class="btn btn-info">Get it now</a> <a href="javascript:void" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
+                        <a href="javascript:void" class="btn btn-info">Get it now</a> <a href="javascript:void"
+                            class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
                     </div>
                 </div>
                 <!--/.Content-->
@@ -210,21 +706,25 @@
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">
                 © 2020 Copyright: <a href="https://newgen-bd.com/" class="c-text">Newgen Technology Limited</a>
-                
             </div><!-- Copyright -->
         </footer>
+
     </div>
     <!--/.Footer-->
+
     <!-- SCRIPTS -->
     <!-- JQuery -->
+    <!--
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js'></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script> <!-- MDB core JavaScript -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+-->
 </body>
 
 </html>
