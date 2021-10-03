@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(5cb45a0d0bfc20ef2024.woff2) format("woff2"), url(a7d6a198f811bf2aea7c.woff) format("woff");
+  src: url(images/5cb45a0d0bfc20ef2024.woff2) format("woff2"), url(images/a7d6a198f811bf2aea7c.woff) format("woff");
 }
 .material-icons {
   font-family: "Material Icons";
@@ -31,7 +31,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(8dbcf118d5cc4c6a07de.woff2) format("woff2"), url(6669c0121d1203b84c10.woff) format("woff");
+  src: url(images/8dbcf118d5cc4c6a07de.woff2) format("woff2"), url(images/6669c0121d1203b84c10.woff) format("woff");
 }
 .material-icons-outlined {
   font-family: "Material Icons Outlined";
@@ -56,7 +56,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(5e3e9f72937cca291bfc.woff2) format("woff2"), url(9e0dd2772825de86507c.woff) format("woff");
+  src: url(images/5e3e9f72937cca291bfc.woff2) format("woff2"), url(images/9e0dd2772825de86507c.woff) format("woff");
 }
 .material-icons-round {
   font-family: "Material Icons Round";
@@ -81,7 +81,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(1e2ac639f21e383dcf63.woff2) format("woff2"), url(79e91b0a6cb7f8617766.woff) format("woff");
+  src: url(images/1e2ac639f21e383dcf63.woff2) format("woff2"), url(images/79e91b0a6cb7f8617766.woff) format("woff");
 }
 .material-icons-sharp {
   font-family: "Material Icons Sharp";
@@ -106,7 +106,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(269e4ad6ea1937c25274.woff2) format("woff2"), url(57f9add3b2d96ce51e6e.woff) format("woff");
+  src: url(images/269e4ad6ea1937c25274.woff2) format("woff2"), url(images/57f9add3b2d96ce51e6e.woff) format("woff");
 }
 .material-icons-two-tone {
   font-family: "Material Icons Two Tone";
