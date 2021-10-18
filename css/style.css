@@ -8,7 +8,7 @@
 }
 
 .bg-secondary-color {
-  background-color: #3f3f70;
+  background-color: rgba(0, 156, 247, 0.658);
 }
 
 .btn:focus {
@@ -584,7 +584,7 @@ body {
 }
 
 #bottom .end-call {
-  background: linear-gradient(267deg, #009EF7, #3f3f70);
+  background: #009EF7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: 0;
@@ -598,7 +598,7 @@ body {
 }
 
 #bottom .end-call:hover {
-  background: linear-gradient(267deg, #3f3f70, #009EF7);
+  background: rgba(0, 156, 247, 0.658);
 }
 
 #navbar .navbar {
@@ -662,7 +662,7 @@ body {
 }
 
 .bg-secondary-color {
-  background-color: #3f3f70;
+  background-color: rgba(0, 156, 247, 0.658);
 }
 
 .btn:focus {
