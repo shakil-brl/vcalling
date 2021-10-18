@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .text-color {
-  color: #009EF7 !important;
+  color: #3f3f70 !important;
 }
 
 .bg-color {
-  background-color: #009EF7;
+  background-color: #3f3f70;
 }
 
 .bg-secondary-color {
-  background-color: #3f3f70;
+  background-color: #3f3f7094;
 }
 
 .btn:focus {
@@ -21,7 +21,7 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
-  border-color: #009EF7;
+  border-color: #3f3f70;
 }
 
 .btn-clear {
@@ -60,7 +60,7 @@
 }
 
 svg {
-  fill: #009EF7;
+  fill: #3f3f70;
 }
 
 body {
@@ -83,7 +83,7 @@ body {
 }
 
 #top-color {
-  background-color: #009EF7;
+  background-color: #3f3f70;
   padding: 2px 20px;
   text-align: right;
   line-height: 28px;
@@ -119,7 +119,7 @@ body {
 
 #content .scrollbar-thumb {
   width: 5px;
-  background-color: rgba(0, 158, 247, 0.5);
+  background-color: rgba(63, 63, 112, 0.5);
 }
 
 #content .scrollbar-track-y {
@@ -166,7 +166,7 @@ body {
   top: 1px;
   display: inline-block;
   display: none;
-  background: rgba(0, 158, 247, 0.1);
+  background: rgba(63, 63, 112, 0.1);
   padding: 10px;
   cursor: pointer;
 }
@@ -190,7 +190,7 @@ body {
   cursor: pointer;
   top: 47%;
   display: inline-block;
-  background: rgba(0, 158, 247, 0.1);
+  background: rgba(63, 63, 112, 0.1);
   width: 40px;
   line-height: 40px;
   border-radius: 50%;
@@ -234,7 +234,7 @@ body {
   left: 0;
   z-index: 3;
   color: #fff;
-  border-left: 4px solid #005d91;
+  border-left: 4px solid #1a1a2f;
   padding-left: 10px;
 }
 
@@ -255,7 +255,7 @@ body {
   top: 40%;
   line-height: 25px;
   width: unset;
-  background-color: rgba(0, 158, 247, 0.1);
+  background-color: rgba(63, 63, 112, 0.1);
   padding-left: 6px;
   border-radius: 50px 0 0 50px;
   width: 25px;
@@ -298,7 +298,7 @@ body {
   left: 0;
   z-index: 3;
   color: #fff;
-  border-left: 4px solid #005d91;
+  border-left: 4px solid #1a1a2f;
   padding-left: 10px;
 }
 
@@ -326,11 +326,11 @@ body {
 }
 
 #content .sidebar .right-content .sidebar-close-btn {
-  background-color: rgba(0, 158, 247, 0.1);
+  background-color: rgba(63, 63, 112, 0.1);
   padding: 0;
   outline: 0;
   border: 0;
-  color: #009EF7;
+  color: #3f3f70;
   font-size: 20px;
   margin-bottom: 5px;
   padding: 2px 12px;
@@ -342,14 +342,14 @@ body {
 }
 
 #content .sidebar .right-content .search .input-group {
-  border: 1px solid #009EF7;
+  border: 1px solid #3f3f70;
   border-radius: 35px;
   height: 26px;
   overflow: hidden;
 }
 
 #content .sidebar .right-content .search .input-group .input-group-text {
-  color: #009EF7;
+  color: #3f3f70;
   border: 0;
   padding: 0;
   border-radius: 0;
@@ -362,7 +362,7 @@ body {
 
 #content .sidebar .right-content .search .input-group .form-control {
   background-color: transparent;
-  color: #009EF7;
+  color: #3f3f70;
   border-radius: 0;
   border: 0;
   padding: 0;
@@ -383,8 +383,8 @@ body {
   font-size: 14px;
   padding: 3px 6px;
   border-radius: 23px;
-  border: 1px solid #91d7ff;
-  color: #009EF7;
+  border: 1px solid #8b8bbd;
+  color: #3f3f70;
 }
 
 #content .sidebar .right-content .user-list .user .audio {
@@ -408,7 +408,7 @@ body {
   background-color: rgba(255, 76, 102, 0.1);
   border: 0;
   padding: 0;
-  color: #009EF7;
+  color: #3f3f70;
   margin: 0;
   outline: 0;
   line-height: 1;
@@ -437,7 +437,7 @@ body {
 
 #content .sidebar .right-content .group-chat .right span {
   display: inline-block;
-  background-color: #009EF7;
+  background-color: #3f3f70;
   color: #fff;
   padding: 4px 10px;
   padding-left: 15px;
@@ -469,19 +469,19 @@ body {
 }
 
 #content .sidebar .right-content .message ::-webkit-input-placeholder {
-  color: #009EF7;
+  color: #3f3f70;
 }
 
 #content .sidebar .right-content .message :-ms-input-placeholder {
-  color: #009EF7;
+  color: #3f3f70;
 }
 
 #content .sidebar .right-content .message ::-ms-input-placeholder {
-  color: #009EF7;
+  color: #3f3f70;
 }
 
 #content .sidebar .right-content .message ::placeholder {
-  color: #009EF7;
+  color: #3f3f70;
 }
 
 #content .sidebar .right-content .speaker-view-sidebar .speaker,
@@ -503,7 +503,7 @@ body {
   left: 0;
   z-index: 3;
   color: #fff;
-  border-left: 4px solid #005d91;
+  border-left: 4px solid #1a1a2f;
   padding-left: 10px;
 }
 
@@ -530,7 +530,7 @@ body {
   left: 0;
   z-index: 3;
   color: #fff;
-  border-left: 4px solid #005d91;
+  border-left: 4px solid #1a1a2f;
   padding-left: 6px;
   font-size: 14px;
 }
@@ -557,11 +557,11 @@ body {
   height: 40px;
   text-align: center;
   height: 40px;
-  background-color: rgba(0, 158, 247, 0.1);
+  background-color: rgba(63, 63, 112, 0.1);
   border: 0;
   outline: 0;
   width: 40px;
-  color: #009EF7;
+  color: #3f3f70;
   border-radius: 50%;
 }
 
@@ -584,7 +584,7 @@ body {
 }
 
 #bottom .end-call {
-  background: linear-gradient(267deg, #009EF7, #3f3f70);
+  background: #3f3f70;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: 0;
@@ -598,7 +598,7 @@ body {
 }
 
 #bottom .end-call:hover {
-  background: linear-gradient(267deg, #3f3f70, #009EF7);
+  background: #3f3f7094;
 }
 
 #navbar .navbar {
@@ -610,17 +610,17 @@ body {
 }
 
 #navbar .navbar .navbar-toggler svg {
-  fill: #009EF7;
+  fill: #3f3f70;
   width: 25px;
 }
 
 #navbar .navbar .navbar-nav .nav-item .nav-link {
-  color: #009EF7;
+  color: #3f3f70;
 }
 
 #navbar .navbar .navbar-nav .nav-item .nav-link.active {
   color: #fff;
-  background-color: #009EF7;
+  background-color: #3f3f70;
   padding-right: 1rem;
   padding-left: 1rem;
   border-radius: 20px;
@@ -654,15 +654,15 @@ body {
 }
 
 .text-color {
-  color: #009EF7 !important;
+  color: #3f3f70 !important;
 }
 
 .bg-color {
-  background-color: #009EF7;
+  background-color: #3f3f70;
 }
 
 .bg-secondary-color {
-  background-color: #3f3f70;
+  background-color: #3f3f7094;
 }
 
 .btn:focus {
@@ -675,7 +675,7 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
-  border-color: #009EF7;
+  border-color: #3f3f70;
 }
 
 .btn-clear {
@@ -714,7 +714,7 @@ body {
 }
 
 svg {
-  fill: #009EF7;
+  fill: #3f3f70;
 }
 
 @media only screen and (min-width: 1400px) {

@@ -3,13 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 20.3 31.5" style="enable-background:new 0 0 20.3 31.5;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#009EF7;}
+	.st0{fill:#3F3F70;}
 </style>
-<title>Audio_1</title>
+<title>Audio_2</title>
 <g>
+	<path class="st0" d="M5.5,19.5L4,20.8c0.3,2.8,2.6,5,5.4,5.1V30h-2v1.5H13V30h-2v-4.1c3.1-0.1,5.7-2.6,5.7-5.7V9.5l-1.5,1.3
+		L5.5,19.5z"/>
 	<path class="st0" d="M4,18.8l1.5-1.4l0,0L20.3,4.2l-1-1.1l-2.8,2.5C16.4,2.5,13.9,0,10.8,0H9.7C6.5,0,4,2.6,4,5.8v11l-4,3.6l1,1.1
-		L4,18.8L4,18.8z M5.5,5.8c0-2.3,1.9-4.3,4.3-4.3h1.1c2.3,0,4.2,1.9,4.3,4.3v1.1l-9.6,8.6L5.5,5.8z"/>
-	<path class="st0" d="M15.1,20.2c0,2.3-1.9,4.3-4.3,4.3H9.7c-2.3,0-4.3-1.9-4.3-4.3v-0.7L4,20.8c0.3,2.8,2.6,5,5.4,5.1V30h-2v1.5H13
-		V30h-2v-4.1c3.1-0.1,5.7-2.6,5.7-5.7V9.5l-1.5,1.3v9.4H15.1z"/>
+		L4,18.8L4,18.8z"/>
 </g>
 </svg>
