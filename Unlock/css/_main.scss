@@ -7,15 +7,18 @@ body {
     color: lighten($black, 50%);
     overflow-x: hidden;
 }
+
 #unlock {
     min-height: 93vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
     border-radius: 0 0 10px 10px;
 }
+
 #copyright {
     margin-top: 15px;
 }
+
 #top-color {
     background-color: $primary;
     padding: 2px 20px;
@@ -39,11 +42,11 @@ body {
         }
     }
 }
+
 #content {
     .scrollbar-track.scrollbar-track-x {
         display: none !important;
     }
-
     .scrollbar-thumb {
         width: 5px;
         background-color: rgba($color: $primary, $alpha: 0.5);
@@ -207,7 +210,6 @@ body {
             }
         }
     }
-
     .sidebar {
         transition: 0.3s;
         .tab-pane {
@@ -349,7 +351,7 @@ body {
                     border-width: 0;
                     border-bottom-width: 1px;
                 }
-                ::placeholder {
+                 ::placeholder {
                     color: $primary;
                 }
             }
@@ -416,6 +418,7 @@ body {
         }
     }
 }
+
 #bottom {
     background-color: $white;
     padding: 15px 20px;
@@ -451,7 +454,7 @@ body {
         }
     }
     .end-call {
-        background: linear-gradient(267deg, #ff4c66, rgba(255, 76, 102, 0.67));
+        background: linear-gradient(267deg, $primary, $secondary);
         transition: 0.3s;
         border: 0;
         padding: 0;
@@ -463,9 +466,10 @@ body {
         border-radius: 21px;
     }
     .end-call:hover {
-        background: linear-gradient(267deg, rgba(255, 76, 102, 0.67), #ff4c66);
+        background: linear-gradient(267deg, $secondary, $primary);
     }
 }
+
 #navbar {
     .navbar {
         border-bottom: 1px solid lighten($black, 85%);
