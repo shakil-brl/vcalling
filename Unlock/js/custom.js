@@ -40,6 +40,7 @@ $(document).ready(function () {
 
     Scrollbar.init(document.querySelector('#group-chat'));
     Scrollbar.init(document.querySelector('#participant-schroll'));
+    Scrollbar.init(document.querySelector('textarea.form-control'));
 
 
     $("#content .all-members .row .col").click(function () {

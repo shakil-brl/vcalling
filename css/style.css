@@ -147,6 +147,7 @@ body {
 
 #content .meeting-member .left-content .top-icon a svg {
   width: 15px;
+  fill: #999999;
 }
 
 #content .meeting-member .left-content .top-icon a.speaker-view-btn {
@@ -154,7 +155,7 @@ body {
 }
 
 #content .meeting-member .left-content .all-members {
-  border: #dadada solid 1px;
+  border: white solid 1px;
   height: 100%;
   position: relative;
 }
@@ -322,7 +323,7 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   margin-left: 15px;
-  border-left: #dadada solid 1px;
+  border-left: white solid 1px;
 }
 
 #content .sidebar .right-content .sidebar-close-btn {
@@ -383,8 +384,7 @@ body {
   font-size: 14px;
   padding: 3px 6px;
   border-radius: 23px;
-  border: 1px solid #91d7ff;
-  color: #009EF7;
+  color: #999999;
 }
 
 #content .sidebar .right-content .user-list .user .audio {
@@ -394,6 +394,7 @@ body {
 #content .sidebar .right-content .user-list .user svg {
   width: 20px;
   max-height: 18px;
+  fill: #999999;
 }
 
 #content .sidebar .right-content .user-list .user .right svg {
@@ -405,10 +406,10 @@ body {
 }
 
 #content .sidebar .right-content .mute-panel .btn-clear {
-  background-color: rgba(255, 76, 102, 0.1);
+  background-color: rgba(143, 143, 143, 0.1);
   border: 0;
   padding: 0;
-  color: #009EF7;
+  color: #999999;
   margin: 0;
   outline: 0;
   line-height: 1;
@@ -422,8 +423,8 @@ body {
 }
 
 #content .sidebar .right-content .mute-panel .btn-clear.success {
-  background-color: rgba(0, 183, 74, 0.1);
-  color: #00b74a;
+  background-color: rgba(143, 143, 143, 0.1);
+  color: #999999;
 }
 
 #content .sidebar .right-content .group-chat .right,
