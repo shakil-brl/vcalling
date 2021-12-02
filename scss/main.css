@@ -1100,4 +1100,9 @@ a {
   right: -10px;
   text-align: right;
 }
+
+#copyright {
+    display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
