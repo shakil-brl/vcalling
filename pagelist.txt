@@ -1,0 +1,12 @@
+https://shakil-brl.github.io/vcalling/grid.html
+https://shakil-brl.github.io/vcalling/login.html
+https://shakil-brl.github.io/vcalling/forget.html
+https://shakil-brl.github.io/vcalling/join.html
+https://shakil-brl.github.io/vcalling/signup.html
+https://shakil-brl.github.io/vcalling/grid_01-04.html
+https://shakil-brl.github.io/vcalling/grid_05-09.html
+https://shakil-brl.github.io/vcalling/grid_10-12.html
+https://shakil-brl.github.io/vcalling/grid_13-16.html
+https://shakil-brl.github.io/vcalling/grid_17-20.html
+https://shakil-brl.github.io/vcalling/speaker_view.html
+https://shakil-brl.github.io/vcalling/white_board.html
