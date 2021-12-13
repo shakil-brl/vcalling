@@ -181,7 +181,7 @@
                 </div>
 
 
-                <section id="bottom" class="d-flex justify-content-between">
+                              <section id="bottom" class="d-flex justify-content-between">
                     <div class="left">
                         <img class="audio" src="img/bottom_icon/audio.svg" alt="">
                         <img class="video filter-primary" src="img/bottom_icon/video.svg" alt="">
@@ -259,19 +259,27 @@
                         </div>
                         <img class="board active" src="img/bottom_icon/white_board.svg" alt="">
                         <img class="add-user" src="img/bottom_icon/add_perticipant.svg" alt="">
-                        <img class="all-user sidebar-show" src="img/bottom_icon/all_perticipants.svg" alt="">
+                        <div class="d-inline-block" style="margin-right: 15px;">
+                            <img class="all-user sidebar-show" style="margin-right: 6px;"
+                                src="img/bottom_icon/all_perticipants.svg" alt="">
+                            <span class="badge rounded-pill badge-notification bg-danger">999</span>
+                        </div>
                         <img class="poll" src="img/bottom_icon/polls.svg" alt="">
                         <img class="share sidebar-show" src="img/bottom_icon/share.svg" alt="">
                         <img class="chat sidebar-show" src="img/bottom_icon/chat.svg" alt="">
                         <img class="record filter-primary" src="img/bottom_icon/record.svg" alt="">
                     </div>
-                    <div>
-                        <button class="btn leave-btn">
+                    <div class="dropup leave">
+                        <button type="button" data-mdb-toggle="dropdown" class="btn leave-btn">
                             <span>Leave</span>
                         </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item btn leave-btn mb-1" href="#">End Meeting for All</a></li>
+                            <li><a class="dropdown-item btn leave-btn gray" href="#">Leave Meeting</a></li>
+                        </ul>
                     </div>
                 </section>
-            </div>
+				</div>
             <div class="sidebar ">
                 <span class="sidebar-close-btn">&times;</span>
 

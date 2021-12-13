@@ -139,6 +139,7 @@
   color: #fff;
   text-transform: capitalize;
   border-radius: 50px;
+  text-align: center;
   min-width: 70px !important;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #ff736b), to(#ff2260));
   background-image: linear-gradient(to right, #ff736b 40%, #ff2260);
@@ -147,6 +148,21 @@
 #bottom .leave-btn:hover {
   background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #ff736b), to(#ff2260));
   background-image: linear-gradient(to left, #ff736b 40%, #ff2260);
+}
+
+#bottom .leave .dropdown-menu {
+  background-color: #262626;
+  padding: 10px;
+  border-radius: 10px !important;
+}
+
+#bottom .leave .dropdown-menu .leave-btn {
+  border-radius: 5px;
+}
+
+#bottom .leave .dropdown-menu .leave-btn.gray {
+  background-image: unset;
+  background-color: #4d4d4d;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1069,7 +1085,7 @@ a {
 }
 
 #meeting-body .meeting-members .speaker-view .speaker.guest video {
-  max-height: 58vh;
+  max-height: 54vh;
 }
 
 #meeting-body .meeting-members .speaker-view .top .guest .name {
@@ -1100,9 +1116,4 @@ a {
   right: -10px;
   text-align: right;
 }
-
-#copyright {
-    display: none;
-}
-
 /*# sourceMappingURL=main.css.map */
