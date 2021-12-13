@@ -12,7 +12,6 @@
 
 #meeting-body .sidebar {
   position: relative;
-  min-width: 350px;
   width: 350px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
