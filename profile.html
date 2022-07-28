@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/mdb.min.css">
+    <link type="text/css" rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="img/logo_icon.svg" type="image/x-icon">
+    <title>Unlock Meeting</title>
+</head>
+
+<body class="m-0">
+    <section id="minimize-panel" class=""> <br></section>
+
+    <section id="navbar" class="sticky-top">
+        <nav class="navbar shadow-0 navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/logo.svg" id="rrr" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M22,3v2h-9V3H22z M22,19v2H9v-2H22z M22,11v2H3v-2H22z" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mt-4 mt-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join a Meeting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Host a Meeting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="sidebar-meeting-info" class="d-flex flex-column flex-md-row">
+        <section class="sidebar">
+            <ul class="nav flex-row flex-md-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="meeting.html">Meeting</a>
+                </li>
+            </ul>
+        </section>
+        <div class="profile-content profile">
+            <div class="top d-flex flex-column align-items-center align-items-sm-start">
+                <img src="img/user-line.svg" class="photo" alt="">
+                <div class="name title">Md. Tariqul Islam</div>
+            </div>
+
+            <div class="profile-detail">
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Personal Meeting ID
+                    </div>
+                    <div class="right">
+                        UBGE9GP6702WDZ7 <br>
+                        https://domain.com/room/UBGE9GP6702WDZ7 <br>
+                        Use this meeting ID for instant meeting.
+                    </div>
+                </div>
+
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Sign In Email
+                    </div>
+                    <div class="right">
+                        examlpe@mail.com
+                    </div>
+                </div>
+
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Lisence Type
+                    </div>
+                    <div class="right">
+                        <div class="d-flex">
+                            Basic
+                            <a href="" class="ms-2 d-flex align-items-center">
+                                <img width="20" src="img/information-fill.svg" class="me-1" alt="">
+                                Upgrate
+                            </a>
+                        </div>
+                        Maximum 100 participant <a href="">Learn More </a>
+                    </div>
+                </div>
+
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Language
+                    </div>
+                    <div class="right">
+                        English
+                    </div>
+                </div>
+
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Date and Time
+                    </div>
+                    <div class="right">
+                        <b>Time Zone</b> <br>
+                        (GMT +6.00) Astana, Dhaka <br>
+
+                        <b>Date Format</b> <br>
+                        dd/mm/yyyy <br>
+                        Example: 24/07/2022 <br>
+
+                        <b>Time Format</b> <br>
+                        24 Hour <br>
+                    </div>
+                </div>
+
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Sign In Password
+                    </div>
+                    <div class="right">
+                        <input readonly value="12345678944" type="password" class="clear disabled form-control">
+                    </div>
+                </div>
+
+                <div class="row main-row row-cols-1 row-cols-sm-2">
+                    <div class="left">
+                        Host
+                    </div>
+                    <div class="right">
+                        <input readonly value="7598645" id="hostKey" type="password"
+                            class="clear disabled form-control">
+                        <a type="button" href="" id="showHostKey">show</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scrollbar.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
