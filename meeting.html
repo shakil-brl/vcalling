@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/mdb.min.css">
+    <link type="text/css" rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="img/logo_icon.svg" type="image/x-icon">
+    <title>Unlock Meeting</title>
+</head>
+
+<body class="m-0">
+    <section id="minimize-panel" class=""> <br></section>
+
+    <section id="navbar" class="sticky-top">
+        <nav class="navbar shadow-0 navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/logo.svg" id="rrr" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M22,3v2h-9V3H22z M22,19v2H9v-2H22z M22,11v2H3v-2H22z" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mt-4 mt-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join a Meeting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Host a Meeting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="sidebar-meeting-info" class="d-flex flex-column flex-md-row">
+        <section class="sidebar">
+            <ul class="nav flex-row flex-md-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="meeting.html">Meeting</a>
+                </li>
+            </ul>
+        </section>
+        <div class="profile-content">
+            <h2>Meeting</h2>
+            <div class="meeting-content">
+
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-4" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
+                            aria-controls="ex1-tabs-1" aria-selected="true">Upcoming</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab"
+                            aria-controls="ex1-tabs-2" aria-selected="false">Previous</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3" role="tab"
+                            aria-controls="ex1-tabs-3" aria-selected="false">Personal Room</a>
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
+
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+
+
+                        <div class="schedule mb-4">
+                            <div class="d-flex justify-content-between flex-wrap align-items-start">
+                                <div class="left">
+                                    <div class="input d-flex flex-column flex-sm-row ">
+                                        <div class="input-group mb-2 me-2">
+                                            <span class="input-group-text">
+                                                <img width="18" src="img/calendar-2-line.svg">
+                                            </span>
+                                            <input class="form-control" type="text" placeholder="Start Time">
+                                        </div>
+
+                                        <div class="input-group  mb-2">
+                                            <span class="input-group-text">
+                                                <img width="18" src="img/calendar-2-line.svg">
+                                            </span>
+                                            <input class="form-control" type="text" placeholder="End Time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" data-mdb-toggle="modal" data-mdb-target="#scheduleModal"
+                                    class="btn rounded-pill schedule">Schedule a Meeting</button>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="scheduleModal" tabindex="-1"
+                                    aria-labelledby="scheduleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Schedule Meeting</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 g-2">
+                                                    <div class="col-12 w-100">
+                                                        <label for="">Meeting Title</label>
+                                                        <input type="text" placeholder="Meeting Title"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div>
+                                                        <label for="">Start Date</label>
+                                                        <input type="text" placeholder="Start Date"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div>
+                                                        <label for="">End Date</label>
+                                                        <input type="text" placeholder="End Date" class="form-control">
+                                                    </div>
+                                                    <div>
+                                                        <label for="">Meeting ID</label>
+                                                        <input type="text" placeholder="Meeting ID"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn shadow-0 schedule">Save
+                                                    changes</button>
+                                                <button type="button" class="btn shadow-0 cancel"
+                                                    data-mdb-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="all-meetings">
+                            <div class="meeting row g-0 align-items-stretch">
+                                <div class="col-lg-3 col-md-5">
+                                    <div class="date h-100">
+                                        Sunday, July 03
+                                        <div class="time">9:30</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="title h-100">
+                                        <h5 class="header">My Meeting </h5>
+                                        Meeting ID: UBGE9GP6702WDZ7
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="action h-100">
+                                        <div class="action-buttons">
+                                            <div class="d-inline-block d-lg-block">
+                                                <button class="btn btn-sm btn-light copy">
+                                                    <img width="14" class="me-1" src="./img/file-copy-line.svg" alt="">
+                                                    Copy Invitation</button>
+                                            </div>
+                                            <button class="btn btn-sm default">Start</button>
+                                            <button class="btn btn-sm default">Edit</button>
+                                            <button class="btn btn-sm delete">Delete</button>
+                                        </div>
+                                        <small>
+                                            <a class="text-muted d-flex align-items-center" href="">
+                                                <img width="15" class="me-1" src="img/file-list-3-line.svg" alt="">
+                                                <span>Report to Unlock</span>
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meeting row g-0 align-items-stretch">
+                                <div class="col-lg-3 col-md-5">
+                                    <div class="date h-100">
+                                        Sunday, July 03
+                                        <div class="time">9:30</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="title h-100">
+                                        <h5 class="header">My Meeting </h5>
+                                        Meeting ID: UBGE9GP6702WDZ7
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="action h-100">
+                                        <div class="action-buttons">
+                                            <div class="d-inline-block d-lg-block">
+                                                <button class="btn btn-sm btn-light copy">
+                                                    <img width="14" class="me-1" src="./img/file-copy-line.svg" alt="">
+                                                    Copy Invitation</button>
+                                            </div>
+                                            <button class="btn btn-sm default">Start</button>
+                                            <button class="btn btn-sm default">Edit</button>
+                                            <button class="btn btn-sm delete">Delete</button>
+                                        </div>
+                                        <small>
+                                            <a class="text-muted d-flex align-items-center" href="">
+                                                <img width="15" class="me-1" src="img/file-list-3-line.svg" alt="">
+                                                <span>Report to Unlock</span>
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meeting row g-0 align-items-stretch">
+                                <div class="col-lg-3 col-md-5">
+                                    <div class="date h-100">
+                                        Sunday, July 03
+                                        <div class="time">9:30</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="title h-100">
+                                        <h5 class="header">My Meeting </h5>
+                                        Meeting ID: UBGE9GP6702WDZ7
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="action h-100">
+                                        <div class="action-buttons">
+                                            <div class="d-inline-block d-lg-block">
+                                                <button class="btn btn-sm btn-light copy">
+                                                    <img width="14" class="me-1" src="./img/file-copy-line.svg" alt="">
+                                                    Copy Invitation</button>
+                                            </div>
+                                            <button class="btn btn-sm default">Start</button>
+                                            <button class="btn btn-sm default">Edit</button>
+                                            <button class="btn btn-sm delete">Delete</button>
+                                        </div>
+                                        <small>
+                                            <a class="text-muted d-flex align-items-center" href="">
+                                                <img width="15" class="me-1" src="img/file-list-3-line.svg" alt="">
+                                                <span>Report to Unlock</span>
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meeting row g-0 align-items-stretch">
+                                <div class="col-lg-3 col-md-5">
+                                    <div class="date h-100">
+                                        Sunday, July 03
+                                        <div class="time">9:30</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="title h-100">
+                                        <h5 class="header">My Meeting </h5>
+                                        Meeting ID: UBGE9GP6702WDZ7
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="action h-100">
+                                        <div class="action-buttons">
+                                            <div class="d-inline-block d-lg-block">
+                                                <button class="btn btn-sm btn-light copy">
+                                                    <img width="14" class="me-1" src="./img/file-copy-line.svg" alt="">
+                                                    Copy Invitation</button>
+                                            </div>
+                                            <button class="btn btn-sm default">Start</button>
+                                            <button class="btn btn-sm default">Edit</button>
+                                            <button class="btn btn-sm delete">Delete</button>
+                                        </div>
+                                        <small>
+                                            <a class="text-muted d-flex align-items-center" href="">
+                                                <img width="15" class="me-1" src="img/file-list-3-line.svg" alt="">
+                                                <span>Report to Unlock</span>
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meeting row g-0 align-items-stretch">
+                                <div class="col-lg-3 col-md-5">
+                                    <div class="date h-100">
+                                        Sunday, July 03
+                                        <div class="time">9:30</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="title h-100">
+                                        <h5 class="header">My Meeting </h5>
+                                        Meeting ID: UBGE9GP6702WDZ7
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="action h-100">
+                                        <div class="action-buttons">
+                                            <div class="d-inline-block d-lg-block">
+                                                <button class="btn btn-sm btn-light copy">
+                                                    <img width="14" class="me-1" src="./img/file-copy-line.svg" alt="">
+                                                    Copy Invitation</button>
+                                            </div>
+                                            <button class="btn btn-sm default">Start</button>
+                                            <button class="btn btn-sm default">Edit</button>
+                                            <button class="btn btn-sm delete">Delete</button>
+                                        </div>
+                                        <small>
+                                            <a class="text-muted d-flex align-items-center" href="">
+                                                <img width="15" class="me-1" src="img/file-list-3-line.svg" alt="">
+                                                <span>Report to Unlock</span>
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meeting row g-0 align-items-stretch">
+                                <div class="col-lg-3 col-md-5">
+                                    <div class="date h-100">
+                                        Sunday, July 03
+                                        <div class="time">9:30</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="title h-100">
+                                        <h5 class="header">My Meeting </h5>
+                                        Meeting ID: UBGE9GP6702WDZ7
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="action h-100">
+                                        <div class="action-buttons">
+                                            <div class="d-inline-block d-lg-block">
+                                                <button class="btn btn-sm btn-light copy">
+                                                    <img width="14" class="me-1" src="./img/file-copy-line.svg" alt="">
+                                                    Copy Invitation</button>
+                                            </div>
+                                            <button class="btn btn-sm default">Start</button>
+                                            <button class="btn btn-sm default">Edit</button>
+                                            <button class="btn btn-sm delete">Delete</button>
+                                        </div>
+                                        <small>
+                                            <a class="text-muted d-flex align-items-center" href="">
+                                                <img width="15" class="me-1" src="img/file-list-3-line.svg" alt="">
+                                                <span>Report to Unlock</span>
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        Tab 2 content
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <div class="personal-room-text">
+                            <div class="d-flex ">
+                                <div class="label">
+                                    Topic
+                                </div>
+                                <div class="value">
+                                    Tariqul's Personal Meeting Room
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="label">
+                                    Meeting ID
+                                </div>
+                                <div class="value">
+                                    UBGE9GP6702WDZ7
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="label">
+                                    Email
+                                </div>
+                                <div class="value">
+                                    tariqul@newgen-bd.com
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="label">
+                                    Join URL
+                                </div>
+                                <div class="value">
+                                    https://domain.com/room/UBGE9GP6702WDZ7
+                                </div>
+                            </div>
+
+                            <div class="buttons mt-4">
+                                <button class="btn  start-btn me-2">Start</button>
+                                <button class="btn copy-btn btn-light shadow-0 me-2">
+                                    <img src="./img/file-copy-line.svg" class="me-1" width="15">
+                                    Copy The Invitation
+                                </button>
+                                <button class="btn red-btn me-2">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabs content -->
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scrollbar.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
